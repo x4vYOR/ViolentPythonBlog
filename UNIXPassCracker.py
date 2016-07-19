@@ -1,6 +1,6 @@
 import crypt
 
-def testPass(cryptPass): # recibe una contrasena cifrada
+def testPass(cryptPass): #recibe una contrasena cifrada
     salt = cryptPass[0:2]
     dictFile = open('dictionary.txt','r')
     for word in dictFile.readlines():
